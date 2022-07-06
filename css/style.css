@@ -1,0 +1,111 @@
+body {
+    height: 97vh;
+    background-color: #f06292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins Light";
+
+}
+
+#content {
+    height: 570px;
+    width: 480px;
+    background-color: #3c424a;
+}
+
+#nav {
+    height: 40px;
+    border-bottom: 2px solid #343940;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    color: rgba(255, 255, 255, .5);
+    font-family: "Poppins Light";
+    font-size: .9em;
+    text-transform: capitalize;
+}
+
+#nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#nav ul li:hover {
+    border-bottom: 2px solid #f06292;
+    font-weight: bold;
+    color: white;
+}
+
+.active {
+    border-bottom: 2px solid #f06292;
+    font-weight: bold;
+    color: white;
+}
+
+#date {
+    height: 120px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chevrons {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, .3);
+
+}
+
+#date-elt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#date-elt b {
+    display: block;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, .9);
+    letter-spacing: 1pt;
+}
+
+#date-elt span {
+    font-size: .8em;
+    color: rgba(255, 255, 255, .3);
+    font-weight: 100;
+    font-family: "Poppins Regular";
+}
+
+#input-area {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloc1 {
+    width: 400px;
+    border: 1px solid yellow;
+}
