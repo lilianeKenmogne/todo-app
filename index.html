@@ -32,64 +32,84 @@
                 <span> > </span>
             </div>
         </div>
-        <div id="input-area">
-            <div id="bloc1">
+        <div id="bloc-input">
+            <div id="input">
                 <div id="menu-icon">
-                    <svg src="assets/images/menu-alt-left-svgrepo-com.svg" width="24" height="24"
-                        style="fill: rgba(11, 11, 11, 0.5);transform: ;msFilter:;">
-                        <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#555d6a" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </div>
-                <div id="input">
-                    <input type="text">
-                </div>
-                <div id="enter-button">
-                    <input type="checkbox" name="" id="">
-                </div>
-            </div>
-        </div>
-        <!-- <div id="input">
-            <div id="inputcontent">
                 <div>
-                    <svg src="assets/images/menu-alt-left-svgrepo-com.svg" width="24" height="24"
-                        style="fill: rgba(11, 11, 11, 0.5);transform: ;msFilter:;">
-                        <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
-                    </svg>
+                    <input type="text" placeholder="Add a task">
                 </div>
-                <input type="text" name="task" id="task" placeholder="Add a task">
             </div>
         </div>
-        <div id="task-list">
-            <div class="task-elt">
-                <div class="task-elt-content">
-                    <div class="line1">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                                <path
-                                    d="M15 11.586V6h2V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2h2v5.586l-2.707 1.707A.996.996 0 0 0 6 14v2a1 1 0 0 0 1 1h4v3l1 2 1-2v-3h4a1 1 0 0 0 1-1v-2a.996.996 0 0 0-.293-.707L15 11.586z">
-                                </path>
-                            </svg>
+        <div id="bloc-task">
+            <div class="task-item">
+                <div class="pin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f06292"
+                        class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
+                    </svg>
+                </div>
+                <div class="line1">
+                    <div class="check">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-title">
+                        <div class="title">
+                            <span>task-title</span>
                         </div>
-                        <div class="checkbox">
-                            <input type="checkbox">
-                        </div>
-                        <div class="topic">
-                            <span>Getting and invite from Dribble</span>
-                        </div>
-                        <div class="more">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
-                                <path
-                                    d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
-                                </path>
-                            </svg>
+                        <div class="description">
+                            <span>task description</span>
                         </div>
                     </div>
-                </div>
-            </div> 
+                    <div class="more">
+                        <div class="dots">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a3acb9"
+                                class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                            </svg>
+                        </div>
 
-        </div>--
+                        <div class="actions">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
+                                </svg>
+                                <span>Pin on the top</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a3acb9"
+                                    class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z" />
+                                </svg>
+                                <span>Add a memo</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a3acb9"
+                                    class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg>
+                                <span>Delete</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
